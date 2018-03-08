@@ -3,10 +3,11 @@
 #Welcome to my UNCC Data Analytics Bootcamp assignment for our first week of Python!
 
 #Couple of things:
-#(1)I only ran one .txt file on each project.  I wasn't sure if you desired to test the code and see it
+
+#(1) I only ran one .txt file on each project.  I wasn't sure if you desired to test the code and see it
 #output to the main folder for each project.
 
-#(2)I was disappointed to only get to the minimum number of projects; if I have more time next week I 
+#(2) I was disappointed to only get to the minimum number of projects; if I have more time next week I 
 #will go back and work through the other projects.  I struggled hard in the beginning of this
 #work, but was satisfied with it in the end...
 
