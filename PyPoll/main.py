@@ -53,14 +53,14 @@ if user_input in file_list:
     winner = election_total_df.iloc[0]["Candidate"]
 
 #Print results to console
-    print("Election Results \n--------------------\nTotal Votes: "+str(vote_counts)+"\n--------------------")
+    print("Election Results \n-------------------------\nTotal Votes: "+str(vote_counts)+"\n-------------------------")
     y = 0
     for row in election_total_df:
         print(election_total_df.iloc[y]["Candidate"]+" : "+election_total_df.iloc[y]["Percent of Votes"]+" ("+election_total_df.iloc[y]["Total Votes"]+")")
         y = (y + 1)
     yy = -1
     print(election_total_df.iloc[yy]["Candidate"]+" : "+election_total_df.iloc[yy]["Percent of Votes"]+" ("+election_total_df.iloc[yy]["Total Votes"]+")")
-    print("\n--------------------\nWinner: "+winner+"\n--------------------")
+    print("\n-------------------------\nWinner: "+winner+"\n-------------------------")
 
 #Create text file name from original input
     noext_user_input = user_input.split(".")
@@ -68,15 +68,15 @@ if user_input in file_list:
 
 #Write text file using same terminal print values   
     f = open(""+new_file+".txt","w")
-    f.write("Election Results \n--------------------\nTotal Votes: "+str(vote_counts)+"\n--------------------")
+    f.write("Election Results \n------------------------\nTotal Votes: "+str(vote_counts)+"\n------------------------")
     y = 0
     for row in election_total_df:
         f.write("\n"+election_total_df.iloc[y]["Candidate"]+" : "+election_total_df.iloc[y]["Percent of Votes"]+" ("+election_total_df.iloc[y]["Total Votes"]+")")
         y = (y + 1)
     yy = -1
     f.write("\n"+election_total_df.iloc[yy]["Candidate"]+" : "+election_total_df.iloc[yy]["Percent of Votes"]+" ("+election_total_df.iloc[yy]["Total Votes"]+")")
-    f.write("\n--------------------\nWinner: "+winner+"\n--------------------")
+    f.write("\n------------------------\nWinner: "+winner+"\n-------------------------")
     f.close()
 #Account for bad file path input  
 else:
-    print("Confirm file is csv and in folder \"PyBank_Raw\", then try again.")
+    print("Confirm file is csv and in folder \"PyPoll_Raw\", then try again.")
